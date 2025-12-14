@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { useProjects } from '../contexts/ProjectContext';
 import ProjectCard from '../components/Projects/ProjectCard';
 import neerajishere from "../assets/images/NeerajIsHere.png"
-import NeerajKumarSharma from "../assets/PDFs/Neeraj Kumar Sharma Resume.pdf"
+import NeerajKumarSharma from "../assets/PDFs/Neeraj Sharma Resume.pdf"
 const Home: React.FC = () => {
   const { getFeaturedProjects } = useProjects();
   const featuredProjects = getFeaturedProjects();
