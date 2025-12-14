@@ -15,6 +15,10 @@ import Gradhub1 from "../assets/images/Projects/Gradhub1.png"
 import Gradhub2 from "../assets/images/Projects/Gradhub2.png"
 import Gradhub3 from "../assets/images/Projects/Gradhub3.png"
 import Gradhub4 from "../assets/images/Projects/Gradhub4.png"
+import MIRELO1 from "../assets/images/Projects/MIRELO1.png"
+import MIRELO2 from "../assets/images/Projects/MIRELO2.png"
+import MIRELO3 from "../assets/images/Projects/MIRELO3.png"
+import MIRELO4 from "../assets/images/Projects/MIRELO4.png"
 export const projectsData: Project[] = [
   {
     id: 'whatsapp-clone',
@@ -120,6 +124,28 @@ export const projectsData: Project[] = [
     repoUrl: 'https://github.com/Neerajupadhyay143/',
     challenges: 'Designing a responsive and intuitive dashboard, implementing complex product management features, and integrating real-time analytics widgets.',
     role: 'Full-stack Developer',
+    featured: true
+  }
+  ,
+  {
+    id: 'Freelancing',
+    title: 'MIRELO BATHROOMS',
+    description: 'A paid client-based freelancing project where I designed and developed the frontend for a product-based bathroom brand platform. The project involved building a responsive and modern UI, integrating Sanity.io as a headless CMS for managing products, categories, and content, and ensuring smooth user experience across devices.',
+    shortDescription: 'Paid freelancing project – frontend development with Sanity.io CMS',
+    techStack: ['Next.js', 'Sanity.io', 'JavaScript', 'Tailwind CSS', 'REST APIs'],
+    category: 'Web Development (Paid Freelancing Project)',
+    year: 2025,
+    image:  MIRELO1,
+    images: [
+      MIRELO1,
+      MIRELO2,
+      MIRELO3,
+      MIRELO4
+    ],
+    liveUrl: 'https://mirelo.co.uk/',
+    repoUrl: 'https://github.com/Neerajupadhyay143/Room-sanitary',
+    challenges: 'Working with Sanity.io was a new experience for me. Understanding schema design, CMS structure, and real-time content updates was challenging initially, but I successfully implemented product management and dynamic content updates, proving my ability to learn and deliver on new technologies.',
+    role: 'Frontend Developer (Freelancing)',
     featured: true
   }
 
