@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'india , Raj',
+      value: 'india ',
       href: 'https://maps.app.goo.gl/WK8qLv7gir4E5Bee7',
     },
   ];
