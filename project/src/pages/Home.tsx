@@ -21,9 +21,14 @@ import {
   SiSanity,
   SiSocketdotio,
   SiBitbucket,
+  SiC,
+  SiCplusplus,
+  SiMysql,
+  SiFirebase,
 
 } from "react-icons/si";
-
+import { FaDatabase } from "react-icons/fa";
+import { TbBinaryTree } from "react-icons/tb";
 const Home: React.FC = () => {
   const { getFeaturedProjects } = useProjects();
   const featuredProjects = getFeaturedProjects();
@@ -61,7 +66,17 @@ const Home: React.FC = () => {
     { name: "Next.js", icon: SiNextdotjs },
     { name: "Tailwind CSS", icon: SiTailwindcss },
     { name: "Bootstrap 5", icon: FaBootstrap },
+
+    // 🔥 New Added Skills
+    { name: "C", icon: SiC },
+    { name: "C++", icon: SiCplusplus },
+    { name: "Data Structures", icon: TbBinaryTree },
+    { name: "Algorithms", icon: TbBinaryTree },
+    { name: "MySQL", icon: SiMysql },
+    { name: "SQL", icon: FaDatabase },
+    { name: "Firebase", icon: SiFirebase },
   ];
+
 
   return (
     <div className="min-h-screen">
