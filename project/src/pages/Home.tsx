@@ -6,6 +6,24 @@ import { useProjects } from '../contexts/ProjectContext';
 import ProjectCard from '../components/Projects/ProjectCard';
 import neerajishere from "../assets/images/NeerajIsHere.png"
 import NeerajKumarSharma from "../assets/PDFs/Neeraj Sharma Resume.pdf"
+import {
+  FaReact,
+  FaNodeJs,
+  FaGithub,
+  FaBootstrap,
+} from "react-icons/fa";
+import {
+  SiTypescript,
+  SiMongodb,
+  SiRedux,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiSanity,
+  SiSocketdotio,
+  SiBitbucket,
+
+} from "react-icons/si";
+
 const Home: React.FC = () => {
   const { getFeaturedProjects } = useProjects();
   const featuredProjects = getFeaturedProjects();
@@ -29,6 +47,21 @@ const Home: React.FC = () => {
       transition: { duration: 0.6 },
     },
   };
+
+  const skills = [
+    { name: "React", icon: FaReact },
+    { name: "TypeScript", icon: SiTypescript },
+    { name: "Node.js", icon: FaNodeJs },
+    { name: "Socket.io", icon: SiSocketdotio },
+    { name: "Sanity.io", icon: SiSanity },
+    { name: "GitHub", icon: FaGithub },
+    { name: "Bitbucket", icon: SiBitbucket },
+    { name: "MongoDB", icon: SiMongodb },
+    { name: "Redux", icon: SiRedux },
+    { name: "Next.js", icon: SiNextdotjs },
+    { name: "Tailwind CSS", icon: SiTailwindcss },
+    { name: "Bootstrap 5", icon: FaBootstrap },
+  ];
 
   return (
     <div className="min-h-screen">
@@ -201,12 +234,9 @@ const Home: React.FC = () => {
           </motion.div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
-            {[
-              'React', 'TypeScript', 'Node.js', 'Socket.io', 'Sanity.io', 'Github',
-              'Bitbucket', 'MongoDB', 'Redux', "Zustand", 'Next.js', 'Tailwind CSS', "bootstrap5"
-            ].map((skill, index) => (
+            {skills.map(({ name, icon: Icon }, index) => (
               <motion.div
-                key={skill}
+                key={name}
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 whileHover={{ scale: 1.1 }}
@@ -214,11 +244,14 @@ const Home: React.FC = () => {
                 viewport={{ once: true }}
                 className="flex flex-col items-center p-6 bg-white dark:bg-gray-900 rounded-xl shadow-sm hover:shadow-md transition-all duration-200"
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg mb-4"></div>
-                <span className="text-sm font-medium text-gray-700 dark:text-gray-300 text-center">{skill}</span>
+                <Icon className="text-4xl text-blue-600 mb-4" />
+                <span className="text-sm font-medium text-gray-700 dark:text-gray-300 text-center">
+                  {name}
+                </span>
               </motion.div>
             ))}
           </div>
+
         </div>
       </section>
     </div>

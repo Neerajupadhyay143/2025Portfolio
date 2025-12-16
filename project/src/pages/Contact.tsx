@@ -52,15 +52,9 @@ const Contact: React.FC = () => {
       href: 'mailto:neerajkumarsharma013@gmail.com',
     },
     {
-      icon: Phone,
-      label: 'Phone',
-      value: '+9163*******2',
-      href: '#',
-    },
-    {
       icon: MapPin,
       label: 'Location',
-      value: 'Jaipur , Raj',
+      value: 'india , Raj',
       href: 'https://maps.app.goo.gl/WK8qLv7gir4E5Bee7',
     },
   ];
