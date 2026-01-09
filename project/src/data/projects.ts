@@ -156,7 +156,7 @@ export const projectsData: Project[] = [
   }
   ,
   {
-    id: 'Freelancing',
+    id: 'Freelancing_Kautilya',
     title: 'Kautilya Law Institute',
     description: 'A paid client-based freelancing project where I designed and developed a complete full-stack website for a coaching institute. The project included building a responsive frontend using React, developing backend services with Node.js, and integrating Firebase for authentication, database, and real-time data handling. An admin panel was also created to manage courses, content, and student-related data efficiently.',
     shortDescription: 'Paid freelancing project – Full-stack coaching institute website with admin panel',
