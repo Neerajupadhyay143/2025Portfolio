@@ -19,6 +19,12 @@ import MIRELO1 from "../assets/images/Projects/MIRELO1.png"
 import MIRELO2 from "../assets/images/Projects/MIRELO2.png"
 import MIRELO3 from "../assets/images/Projects/MIRELO3.png"
 import MIRELO4 from "../assets/images/Projects/MIRELO4.png"
+import KAUTILYA1 from "../assets/images/Projects/KAUTILYA1.png"
+import KAUTILYA2 from "../assets/images/Projects/KAUTILYA2.png"
+import KAUTILYA3 from "../assets/images/Projects/KAUTILYA3.png"
+import KAUTILYA4 from "../assets/images/Projects/KAUTILYA4.png"
+import KAUTILYA5 from "../assets/images/Projects/KAUTILYA5.png"
+
 export const projectsData: Project[] = [
   {
     id: 'whatsapp-clone',
@@ -135,7 +141,7 @@ export const projectsData: Project[] = [
     techStack: ['Next.js', 'Sanity.io', 'JavaScript', 'Tailwind CSS', 'REST APIs'],
     category: 'Web Development (Paid Freelancing Project)',
     year: 2025,
-    image:  MIRELO1,
+    image: MIRELO1,
     images: [
       MIRELO1,
       MIRELO2,
@@ -148,5 +154,37 @@ export const projectsData: Project[] = [
     role: 'Frontend Developer (Freelancing)',
     featured: true
   }
+  ,
+  {
+    id: 'Freelancing',
+    title: 'Kautilya Law Institute',
+    description: 'A paid client-based freelancing project where I designed and developed a complete full-stack website for a coaching institute. The project included building a responsive frontend using React, developing backend services with Node.js, and integrating Firebase for authentication, database, and real-time data handling. An admin panel was also created to manage courses, content, and student-related data efficiently.',
+    shortDescription: 'Paid freelancing project – Full-stack coaching institute website with admin panel',
+    techStack: [
+      'React.js',
+      'Node.js',
+      'Firebase',
+      'JavaScript',
+      'Tailwind CSS',
+      'REST APIs'
+    ],
+    category: 'Web Development (Paid Freelancing Project)',
+    year: 2025,
+    image: KAUTILYA1,
+    images: [
+      KAUTILYA1,
+      KAUTILYA2,
+      KAUTILYA3,
+      KAUTILYA4,
+      KAUTILYA5
+    ],  
+    liveUrl: 'https://kautilyalawinstitute.com/',
+    repoUrl: 'https://github.com/Neerajupadhyay143/KautilyaClasses',
+    challenges: 'Handling both frontend and backend development was challenging, especially managing authentication, role-based access for the admin panel, and real-time data updates using Firebase. However, this project strengthened my full-stack skills and helped me gain confidence in building scalable, production-ready applications.',
+    role: 'Full Stack Developer (Freelancing)',
+    featured: true
+  }
+
 
 ];
+
