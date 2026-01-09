@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, Calendar, MapPin, Heart, Code, Briefcase } from 'lucide-react';
-import about_me from "../assets/images/aboutme.png"
+import about_me from "../assets/images/Neeraj.jpeg"
 
 const About: React.FC = () => {
   const skills = [
