@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { useProjects } from '../contexts/ProjectContext';
 import ProjectCard from '../components/Projects/ProjectCard';
 import neerajishere from "../assets/images/NeerajIsHere.png"
-import NeerajKumarSharma from "../assets/PDFs/Neeraj Sharma Resume.pdf"
+import NeerajKumarSharma from "../assets/PDFs/NeerajUpadtedResume.pdf"
 import {
   FaReact,
   FaNodeJs,
